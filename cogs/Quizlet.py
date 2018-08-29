@@ -50,7 +50,7 @@ class Quizlet:
 #:
 	@commands.command(pass_context=True, aliases=['qset'])
 	async def quizlet_set(self, ctx, *search_object):
-		
+		client_id =  os.environ['CLIENT_ID']
 		try:
 			output = ''
 			for word in search_object:
