@@ -87,6 +87,7 @@ async def set_news(ctx, *news):
 @bot.command(pass_context=True)
 async def info(ctx):
 	embed = discord.Embed(title='***Nerdy***',description='A discord bot that tries to make your school related wrok easier but mostly fails. lol. Yeah you should suggest me a better description from ?suggest', color=0x000080)
+	embed.add_field(name='• Bot Created by: ',value='GreekSymbol#4686 [Twitter](https://twitter.com/GreekSymbol)', inline=True)
 	embed.add_field(name='• In servers: ',value=len(bot.servers), inline=True)
 	embed.add_field(name='• Members:  ', value=str(len(set(bot.get_all_members()))), inline=True)
 	delta_uptime = datetime.utcnow() - bot.launch_time
