@@ -91,7 +91,7 @@ class Misc():
 		{'name':'Harry potter and the Sorcerers Stone','val':'Voldemort is the rapey professor.'}
 		]
 		r = random.choice(spoi1)
-		embed = discord.Embed(title='A ranodm spoiler', description='Dont blame me for injuries',color=0x000080)
+		embed = discord.Embed(title='A ranodm spoiler', description='====================',color=0x000080)
 		embed.add_field(name='{}'.format(r['name']), value=r['val'], inline=False)
 		embed.set_footer(text='Dont blame me for injuries....')
 		await self.bot.send_message(ctx.message.author, embed=embed)
