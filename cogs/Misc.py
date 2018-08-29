@@ -78,12 +78,12 @@ class Misc():
 		{'name': 'Romeo and Juliet', 'val': 'They both die, Some were pardoned and some were punished.'},
 		{'name': 'The Five People You Meet in Heaven', 'val': "Don't worry the little girls alive!"},
 		{'name': 'Of Mice and Men', 'val': 'A friend kills a friend, that was the end....Bye Lennie'},
-		{'name':'Give Me Your Hand','val':"Her's Secret - She killed her father"}
-		{'name':'Charlotte Walsh Likes to Win by Jo Piazza','val':"Don't know who wins."}
-		{'name':'Rebecca','val':'Someone was murdered.'}
-		{'name':'Harry Potter and the Deathly Hallows ','val':' Ms. Rowling, you’ve tricked us again.'}
-		{'name':'Death Cure','val':'The girl falls to her death...'}
-		{'name':'True Memoirs of an International Assassin','val':' Nahh dont wanna spoil this one, watch da movie'}
+		{'name':'Give Me Your Hand','val':"Her's Secret - She killed her father"},
+		{'name':'Charlotte Walsh Likes to Win by Jo Piazza','val':"Don't know who wins."},
+		{'name':'Rebecca','val':'Someone was murdered.'},
+		{'name':'Harry Potter and the Deathly Hallows ','val':' Ms. Rowling, you’ve tricked us again.'},
+		{'name':'Death Cure','val':'The girl falls to her death...'},
+		{'name':'True Memoirs of an International Assassin','val':' Nahh dont wanna spoil this one, watch da movie'},
 		{'name':'Harry potter and the Sorcerers Stone','val':'Voldemort is the rapey professor.'}
 		]
 	@commands.command(pass_context=True, aliases=['rs', 'rspoiler'])
