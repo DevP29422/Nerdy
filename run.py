@@ -104,7 +104,7 @@ async def info(ctx):
 	except:
 		res = 'N/A'
 	embed.add_field(name='• Average accurate translations(after last reset): ', value=res, inline=True)
-	embed.add_field(name='• Inivte Link: ', value='[Click Here](https://discordapp.com/api/oauth2/authorize?client_id=483310328009064469&permissions=8&scope=bot)', inline=True)
+	embed.add_field(name='• Inivte Link: ', value='[**Click Here**](https://discordapp.com/api/oauth2/authorize?client_id=483310328009064469&permissions=8&scope=bot)', inline=True)
 	embed.add_field(name='• Created using:', value='[Python(version 3.6.5)](https://www.python.org/) and [Discord.py (version 0.16.12)](https://github.com/Rapptz/discord.py)')
 	
 
