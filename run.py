@@ -6,7 +6,8 @@ from datetime import datetime
 bot = commands.Bot(command_prefix = '?')
 bot.launch_time = datetime.utcnow()
 bot.version = 'PUBLIC 0.1.0'
-
+''''development version 0.8.5, the first digit of that update means a major update, 
+the second degit means a cog added, the third digit is when more than cogs are modified and debugged...'''
 
 
 exts = ['cogs.Quizlet','cogs.English','cogs.Translation', 'cogs.Wolfram', 'cogs.Misc', 'cogs.Programming', 'cogs.Help', 'cogs.Mod']
