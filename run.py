@@ -81,7 +81,7 @@ async def set_news(ctx, *news):
 			output += ' '
 		bot.news=output
 	else:
-		await bot.say('You cannot use the command here.')
+		await bot.say('You cannot use the command.')
 
 
 @bot.command(pass_context=True)
