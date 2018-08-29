@@ -12,7 +12,7 @@ class Help():
 			'?resourceme <topic>, gets articles realted to the <topic> [aliases: `re_me`] \n' '?define <word>, gets definitions for word given from Oxford Disconary and Urban Disconary \n', 
 		inline=True)
 		embed.add_field(name='Misc Cog: ', value='?bookinfo <name>, gets the information about the book from Google Books. \n ?random_poem, gets a random poem [aliases=`rpoem`] \n '+
-			'?suggest, sends a suggestion for the bot to the suggestions channel.', inline=True)
+			'?suggest, sends a suggestion for the bot to the suggestions channel. \n ?random_spoiler, spoils a random book for you.[aliases=`rs, rspoiler`]', inline=True)
 		embed.add_field(name='Mod Cog: ', value='?kick <user>, kicks the user (must have kick perms) \n ?ban <user>, bans a user (must have ban perms)'+
 			'?nick <user> <new_name>, changes a users nick name (must have manage messages nicknames)\n ?warn <user> <warning>, warns the user with a message (must have manage messages perms). \n ?purge <channel> <amt>, deletes <amt> messages from the <channel> (must have manage messages perms)',
 			inline=True)
