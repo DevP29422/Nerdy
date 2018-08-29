@@ -75,7 +75,10 @@ class Misc():
 			ch = self.bot.get_channel(str(479431960234819614))
 			await self.bot.send_message(ch, "An error occurred. try again..Error: "+str(e))
 	
-	spoi1=[{'name': 'To Kill A Mockingbird', 'val': 'Boo kills Bob. '}, 
+
+	@commands.command(pass_context=True, aliases=['rs', 'rspoiler'])
+	async def random_spoiler(self, ctx):
+		spoi1=[{'name': 'To Kill A Mockingbird', 'val': 'Boo kills Bob. '}, 
 		{'name': 'Romeo and Juliet', 'val': 'They both die, Some were pardoned and some were punished.'},
 		{'name': 'The Five People You Meet in Heaven', 'val': "Don't worry the little girls alive!"},
 		{'name': 'Of Mice and Men', 'val': 'A friend kills a friend, that was the end....Bye Lennie'},
@@ -87,8 +90,6 @@ class Misc():
 		{'name':'True Memoirs of an International Assassin','val':' Nahh dont wanna spoil this one, watch da movie'},
 		{'name':'Harry potter and the Sorcerers Stone','val':'Voldemort is the rapey professor.'}
 		]
-	@commands.command(pass_context=True, aliases=['rs', 'rspoiler'])
-	async def random_spoiler(self, ctx):
 		r = random.choice(spoi1)
 		embed = discord.Embed(title='A ranodm spoiler', description='Dont blame me for injuries',color=0x000080)
 		embed.add_field(name='{}'.format(r['name']), value=r['val'], inline=False)
