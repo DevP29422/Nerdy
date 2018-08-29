@@ -1,7 +1,8 @@
 import requests
 import discord
 import asyncio
-import os 
+import os
+import random
 from discord.ext import commands
 from aylienapiclient import textapi
 
