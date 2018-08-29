@@ -95,7 +95,7 @@ async def info(ctx):
 	bot.up_1 = (f"{days}d, {hours}h, {minutes}m, {seconds}s")
 
 
-	embed.add_field(name='Bot Uptime: ',value=bot.up_1, inline=True)
+	embed.add_field(name='• Bot Uptime: ',value=bot.up_1, inline=True)
 	
 	embed.add_field(name='• Commands used: ', value=str(bot.com), inline=True)
 	try:
