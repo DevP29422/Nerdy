@@ -71,7 +71,7 @@ async def shut_down(ctx, shut_code: str):
 		await bot.send_message(ch1, "A random user {} has tried to shut down the bot".format(ctx.message.author.name))
 
 
-bot.news = ''
+bot.news = 'No News! :('
 @bot.command(pass_context=True)
 async def set_news(ctx, *news):
 	if str(ctx.message.author.id) == str(314858630417612801):
