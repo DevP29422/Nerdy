@@ -66,7 +66,7 @@ class Misc():
 	@commands.command(pass_context=True, aliases=['rpoem'])
 	async def random_poem(self, ctx):
 		try:
-			r = requests.get('https://www.poemist.com/api/v1/randompoems').json
+			r = requests.get('https://www.poemist.com/api/v1/randompoems').json()
 			embed = discord.Embed(name='**_'+r[0]['title']+'_**', description='By: '+r[0]['poet']['name'],url=r[0]['url'], color=0x000080)
 			embed.add_field(name='Poem: ', value=r[0]['content'], inline=False)
 			await self.bot.say(embed=embed)
