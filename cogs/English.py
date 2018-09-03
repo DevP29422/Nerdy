@@ -34,14 +34,18 @@ class English():
 			await self.bot.send_message(ch, "An error occurred. Error: **"+str(e)+"** \n \n Message: ```"+str(ctx.message.content)+'```')
 	@commands.command(pass_context=True, aliases=['re_me'])
 	async def resourceme(self, ctx, *search):
+		debug = True
 		try:
 			output = ''
 			for word in search:
 				output += word
 				output += ' '
+			if debug == True:
+				print(output)
 			key_res = os.environ['KEY_RES']
 			url = 'http://api.springernature.com/metadata/json?q='+str(output)+'&api_key='+str(key_res)
-			#print(url)
+			if debug == True:
+				print(url)
 			r = requests.get(url)
 			data = r.json()
 			embed = discord.Embed(title='Resources Found', description=data['query'], color=0x000080)
