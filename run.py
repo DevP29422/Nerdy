@@ -6,8 +6,6 @@ from datetime import datetime
 bot = commands.Bot(command_prefix = '?')
 bot.launch_time = datetime.utcnow()
 bot.version = 'PUBLIC 0.1.0'
-''''development version 0.8.5, the first digit of that update means a major update, 
-the second degit means a cog added, the third digit is when more than cogs are modified and debugged...'''
 
 
 exts = ['cogs.Quizlet','cogs.English','cogs.Translation', 'cogs.Wolfram', 'cogs.Misc', 'cogs.Programming', 'cogs.Help', 'cogs.Mod']
@@ -45,19 +43,6 @@ async def on_reaction_add(reaction, user):
 		bot.list1.append(zer)
 		print(bot.list1)
 
-bot.com = 0
-@bot.event
-async def on_command(command, ctx):
-    bot.com += 1
-
-@bot.command(pass_context=True)
-async def change_com(ctx, amt:int ):
-	if str(ctx.message.channel.id) != str(481963025377787904):
-		await bot.say("Can't use the command here.")
-	else:
-		await bot.say("Bot com is now: "+str(bot.com)+"...")
-		my_Ch = bot.get_channel(str(477233519664431115))
-		await bot.send_message(my_Ch, str(ctx.message.author.name)+"Used changed commands command, which is now: "+str(bot.com))
 
 @bot.command(pass_context=True)
 async def shut_down(ctx, shut_code: str):
@@ -99,7 +84,7 @@ async def info(ctx):
 
 	embed.add_field(name='• Bot Uptime: ',value=bot.up_1, inline=True)
 	
-	embed.add_field(name='• Commands used: ', value=str(bot.com), inline=True)
+
 	try:
 		res = str(str(sum(bot.list1)/len(bot.list1))+'%')
 	except:
